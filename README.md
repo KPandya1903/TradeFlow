@@ -1,5 +1,7 @@
 # TradeFlow — Educational Stock Portfolio Manager
 
+[![test](https://github.com/KPandya1903/TradeFlow/actions/workflows/test.yml/badge.svg)](https://github.com/KPandya1903/TradeFlow/actions/workflows/test.yml)
+
 A full-featured paper trading platform where users get virtual cash, trade stocks with simulated orders, and track portfolio performance. No real money involved — purely educational.
 
 ## Tech Stack
@@ -28,7 +30,7 @@ A full-featured paper trading platform where users get virtual cash, trade stock
 - **Server-side validation**: can only buy with sufficient cash, sell with sufficient shares
 - Weighted-average cost basis, realized/unrealized P&L
 - **FIFO tax tracking**: short-term vs long-term capital gains, wash sale detection, estimated tax liability (32% ST / 15% LT)
-- Limit and stop orders with 60-second automatic checking (re-validated at fill time)
+- Limit and stop orders with 60-second automatic checking (re-validated at fill time; long-running server only, the Vercel build checks once a day via cron)
 - Trade history with CSV export and post-trade review journal
 - Portfolio performance chart with S&P 500 benchmark overlay
 - Tax preview on SELL confirmation — shows estimated tax impact before executing
@@ -207,7 +209,7 @@ npm run dev:client   # Vite on http://localhost:5173
 ### Other Commands
 
 ```bash
-npm test -w server              # Run 280 tests (auth, trading, tax, TA, prediction, validation)
+npm test -w server              # Run 192 Jest tests in 10 suites (auth, orders, portfolio, trade validation, tax, options, TA, prediction)
 npm run lint                    # ESLint
 npm run build:server            # Compile server
 npm run build:client            # Vite production build
