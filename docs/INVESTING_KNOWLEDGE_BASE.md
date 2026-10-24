@@ -1,5 +1,5 @@
 # Investing Knowledge Base — Books, Papers & Frameworks
-> Reference for feature design decisions in Dummy Trading Platform
+> Reference for feature design decisions in TradeFlow
 > Last Updated: 2026-03-13
 
 ---

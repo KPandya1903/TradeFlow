@@ -1,4 +1,4 @@
-# Dummy Trading — Architecture Diagram & Reference
+# TradeFlow — Architecture Diagram & Reference
 
 > **Last Updated:** 2026-03-13 (Session 2 — 7 new features implemented)
 > **Purpose:** Living reference for system design, data flows, and feature status.
@@ -9,7 +9,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                          DUMMY TRADING PLATFORM                              │
+│                          TRADEFLOW PLATFORM                                  │
 │                    Paper Trading + Quant Research + AI                       │
 └─────────────────────────────────────────────────────────────────────────────┘
 

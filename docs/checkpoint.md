@@ -1,4 +1,4 @@
-# Build Checkpoint - Dummy Trading App
+# Build Checkpoint - TradeFlow (formerly Dummy Trading)
 
 Progress log of each implementation step.
 

@@ -1,10 +1,11 @@
 import { Router, Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import { getJwtSecret } from '../../config/jwtSecret.js';
 import prisma from '../../prisma.js';
 
 const router = Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'fallback-dev-secret';
+const JWT_SECRET = getJwtSecret();
 
 // ── POST /api/auth/register ──────────────────────────────
 router.post('/register', async (req: Request, res: Response) => {

@@ -7,3 +7,8 @@ docker-compose.override.yml
 .vercel
 .playwright-mcp/
 *.png
+
+# AI assistant local context
+memory/
+CLAUDE.md
+.claude/
