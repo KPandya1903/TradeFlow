@@ -48,7 +48,7 @@ export default function LoginPage() {
   return (
     <Paper sx={{ p: 5, mt: 10, maxWidth: 400, mx: 'auto', textAlign: 'center' }}>
       <Typography variant="h5" color="primary.main" fontWeight={700} sx={{ mb: 1 }}>
-        Dummy Trading
+        TradeFlow
       </Typography>
       <Typography variant="body2" color="text.secondary" sx={{ mb: 4 }}>
         Sign in to access your portfolio

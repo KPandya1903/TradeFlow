@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-The two best real-world reference products for `Dummy Trading` are:
+The two best real-world reference products for `TradeFlow` are:
 
 1. `TradingView` for the market intelligence, charting, screening, watchlist, alerting, and chart-first workflow.
 2. `Webull` for the brokerage-like trading workflow, richer order entry, quote depth, active-trader ergonomics, and paper-trading realism.
@@ -12,9 +12,9 @@ This split matches the current product shape:
 - Public market/research surfaces live in [client/src/App.tsx](client/src/App.tsx) and behave more like a charting and intelligence platform.
 - Authenticated trading surfaces are backed by paper-trading entities in [server/prisma/schema.prisma](server/prisma/schema.prisma) and route domains in [server/src/app.ts](server/src/app.ts).
 
-## What Dummy Trading Is Today
+## What TradeFlow Is Today
 
-`Dummy Trading` is already more than a simple stock simulator. It currently combines:
+`TradeFlow` is already more than a simple stock simulator. It currently combines:
 
 - Paper portfolios, trade history, pending orders, alerts, badges, groups, and leaderboards.
 - Public market exploration, quote pages, technical analysis, factor views, stock comparison, AI news, ML prediction, and deep research.
@@ -65,9 +65,9 @@ Official feature references reviewed:
 
 ## Feature Comparison Matrix
 
-| Area | Dummy Trading | TradingView | Webull | Benchmark Result |
+| Area | TradeFlow | TradingView | Webull | Benchmark Result |
 | --- | --- | --- | --- | --- |
-| Product identity | Hybrid simulator + research app | Analysis and charting platform with paper/live trading hooks | Broker-style trading platform with paper trading | `Dummy Trading` is split between both |
+| Product identity | Hybrid simulator + research app | Analysis and charting platform with paper/live trading hooks | Broker-style trading platform with paper trading | `TradeFlow` is split between both |
 | Paper trading | Yes, but simplified | Yes, close-to-real chart-linked simulator | Yes, realistic active-trader simulator | Behind both on realism |
 | Portfolios | Strong educational portfolio support | Present, but not the core UX | Present as account-centric brokerage workflow | Closer to Webull than TradingView |
 | Order types | Market, limit, stop | Market, limit, stop on paper trading | Market, limit, stop, trailing stop, stop-limit, bracket, OTO, OCO, OTOCO | Much closer to Webull target, but far behind |
@@ -80,9 +80,9 @@ Official feature references reviewed:
 | Screeners / classifiers | Good lightweight market classifiers | Mature screeners and watchlist-based scanning | Screeners and quote tools | TradingView should be target |
 | Search / discovery | Good ticker search, S&P-centric market page | Broad multi-asset discovery | Broad trading-oriented discovery | Behind on breadth |
 | Quote depth | Basic quote/fundamental view | Strong chart context, DOM with brokers in some setups | Level 2, NBBO, order-book depth messaging | Big Webull gap |
-| Research / AI news | Strong custom differentiator | Limited compared with this app | Limited compared with this app | `Dummy Trading` leads here |
-| ML prediction | Strong custom differentiator | Not the core retail feature | Not the core retail feature | `Dummy Trading` leads here |
-| Social / competition | Groups, badges, leaderboard | Public social/community ecosystem, competitions in some areas | Less core to product | `Dummy Trading` has differentiated educational value |
+| Research / AI news | Strong custom differentiator | Limited compared with this app | Limited compared with this app | `TradeFlow` leads here |
+| ML prediction | Strong custom differentiator | Not the core retail feature | Not the core retail feature | `TradeFlow` leads here |
+| Social / competition | Groups, badges, leaderboard | Public social/community ecosystem, competitions in some areas | Less core to product | `TradeFlow` has differentiated educational value |
 | Custom layouts / terminal feel | Limited | Strong | Strong | Gap for both benchmarks |
 | Multi-asset support | Mostly equities | Very broad | Broader than current app | Gap |
 
@@ -172,7 +172,7 @@ Assessment:
 Target benchmark:
 
 - `TradingView` for presentation and workflow
-- Keep `Dummy Trading`’s own feature differentiation
+- Keep `TradeFlow`’s own feature differentiation
 
 ## Recommended UX Ownership Split
 
@@ -288,7 +288,7 @@ Given the current codebase, the best product strategy is:
 
 1. Use `TradingView` as the primary benchmark for public market intelligence UX.
 2. Use `Webull` as the primary benchmark for authenticated trading realism.
-3. Preserve `Dummy Trading`’s own differentiation in AI research, prediction, learning, and competition.
+3. Preserve `TradeFlow`’s own differentiation in AI research, prediction, learning, and competition.
 
 That produces a clearer product identity than trying to copy one platform end to end.
 

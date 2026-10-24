@@ -137,7 +137,7 @@ export default function Layout() {
             letterSpacing: 0.5,
           }}
         >
-          Dummy Trading
+          TradeFlow
         </Typography>
       </Box>
 
@@ -315,7 +315,7 @@ export default function Layout() {
                 to={isLoggedIn ? '/' : '/market'}
                 sx={{ flex: 1, fontSize: '1rem', fontWeight: 700, color: 'primary.main', textDecoration: 'none' }}
               >
-                Dummy Trading
+                TradeFlow
               </Typography>
               {isLoggedIn && <AlertBadge />}
               <IconButton
